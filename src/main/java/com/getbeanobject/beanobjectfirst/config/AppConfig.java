@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import com.getbeanobject.beanobjectfirst.service.VehicleGeneral;
 import com.getbeanobject.beanobjectfirst.service.BikeBajaj;
 import com.getbeanobject.beanobjectfirst.service.CarMahindra;
+import com.getbeanobject.beanobjectfirst.service.AutoTVSThreeWheeler;
 
 @Configuration
 public class AppConfig {
@@ -18,4 +19,9 @@ public class AppConfig {
 		return new CarMahindra();
 	}
 
+	@Bean(name = "ThreeWheelerTVS")
+	public VehicleGeneral autoTVSThreeWheeler() {
+		return new AutoTVSThreeWheeler();
+	}
+	
 }

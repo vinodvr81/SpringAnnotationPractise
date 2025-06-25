@@ -15,7 +15,7 @@ import com.getbeanobject.beanobjectfirst.controller.PrimaryController;
 import com.getbeanobject.beanobjectfirst.config.AppConfig;
 import com.getbeanobject.beanobjectfirst.service.CarMahindra;
 import com.getbeanobject.beanobjectfirst.service.BikeBajaj;
-
+import com.getbeanobject.beanobjectfirst.service.AutoTVSThreeWheeler;
 
 @SpringBootApplication
 public class BeanobjectfirstApplication {
@@ -37,24 +37,28 @@ public class BeanobjectfirstApplication {
 
 		ValueMessagePassed vms = context.getBean(ValueMessagePassed.class);
 		vms.printMessage();
-		
+
 		AnnotationThroughSetterExample atsp = context.getBean(AnnotationThroughSetterExample.class);
 		System.out.println(atsp.getAnnotationThroughSetterExample());
-		
+
 		AutowiredThroughField atfd = context.getBean(AutowiredThroughField.class);
 		System.out.println(atfd.getAutowiredThroughField());
-		
+
 		QualifierController qcr = context.getBean(QualifierController.class);
 		System.out.println(qcr.getQualifierController());
-		
+
 		PrimaryController pcr = context.getBean(PrimaryController.class);
 		System.out.println(pcr.getPrimaryController());
-		
+
 		BikeBajaj bbj = context.getBean(BikeBajaj.class);
 		System.out.println(bbj.VehicleType() + " " + bbj.EngineCC() + " " + bbj.VehicleBrand());
-		
+
 		CarMahindra cmda = context.getBean(CarMahindra.class);
 		System.out.println(cmda.VehicleType() + " " + cmda.EngineCC() + " " + cmda.VehicleBrand());
+
+		AutoTVSThreeWheeler ATTWr = (AutoTVSThreeWheeler) context.getBean("ThreeWheelerTVS");
+		System.out.println(ATTWr.VehicleType() + " " + ATTWr.EngineCC() + " " + ATTWr.VehicleBrand());
+
 	}
 
 }
