@@ -10,6 +10,8 @@ import com.getbeanobject.beanobjectfirst.controller.AutowiredThroughConstructor;
 import com.getbeanobject.beanobjectfirst.controller.ValueAnnotationExample;
 import com.getbeanobject.beanobjectfirst.controller.AnnotationThroughSetterExample;
 import com.getbeanobject.beanobjectfirst.controller.AutowiredThroughField;
+import com.getbeanobject.beanobjectfirst.controller.QualifierController;
+import com.getbeanobject.beanobjectfirst.controller.PrimaryController;
 
 @SpringBootApplication
 public class BeanobjectfirstApplication {
@@ -37,6 +39,13 @@ public class BeanobjectfirstApplication {
 		
 		AutowiredThroughField atfd = context.getBean(AutowiredThroughField.class);
 		System.out.println(atfd.getAutowiredThroughField());
+		
+		QualifierController qcr = context.getBean(QualifierController.class);
+		System.out.println(qcr.getQualifierController());
+		
+		PrimaryController pcr = context.getBean(PrimaryController.class);
+		System.out.println(pcr.getPrimaryController());
+		
 	}
 
 }
