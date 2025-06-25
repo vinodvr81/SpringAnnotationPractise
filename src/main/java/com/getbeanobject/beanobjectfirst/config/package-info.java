@@ -1,0 +1,1 @@
+package com.getbeanobject.beanobjectfirst.config;

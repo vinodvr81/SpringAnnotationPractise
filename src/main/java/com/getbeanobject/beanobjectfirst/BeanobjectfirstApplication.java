@@ -12,6 +12,10 @@ import com.getbeanobject.beanobjectfirst.controller.AnnotationThroughSetterExamp
 import com.getbeanobject.beanobjectfirst.controller.AutowiredThroughField;
 import com.getbeanobject.beanobjectfirst.controller.QualifierController;
 import com.getbeanobject.beanobjectfirst.controller.PrimaryController;
+import com.getbeanobject.beanobjectfirst.config.AppConfig;
+import com.getbeanobject.beanobjectfirst.service.CarMahindra;
+import com.getbeanobject.beanobjectfirst.service.BikeBajaj;
+
 
 @SpringBootApplication
 public class BeanobjectfirstApplication {
@@ -46,6 +50,11 @@ public class BeanobjectfirstApplication {
 		PrimaryController pcr = context.getBean(PrimaryController.class);
 		System.out.println(pcr.getPrimaryController());
 		
+		BikeBajaj bbj = context.getBean(BikeBajaj.class);
+		System.out.println(bbj.VehicleType() + " " + bbj.EngineCC() + " " + bbj.VehicleBrand());
+		
+		CarMahindra cmda = context.getBean(CarMahindra.class);
+		System.out.println(cmda.VehicleType() + " " + cmda.EngineCC() + " " + cmda.VehicleBrand());
 	}
 
 }
