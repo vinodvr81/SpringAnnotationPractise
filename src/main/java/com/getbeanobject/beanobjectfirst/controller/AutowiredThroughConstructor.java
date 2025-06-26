@@ -18,7 +18,7 @@ public class AutowiredThroughConstructor {
 	}
 	
 	public String getAutowiredThroughConstructor() {
-		return this.bdfo.beanDifferentObjnameCall()+ " " + this.HV.HelloVinod();
+		return this.bdfo.beanDifferentObjnameCall()+ " " + this.HV.getHelloVinod();
 	}
 
 }

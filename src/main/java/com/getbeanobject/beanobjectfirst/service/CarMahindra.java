@@ -1,5 +1,4 @@
 package com.getbeanobject.beanobjectfirst.service;
-import com.getbeanobject.beanobjectfirst.service.VehicleGeneral;
 
 public class CarMahindra implements VehicleGeneral{
 	private String Vehicle_Type;

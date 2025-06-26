@@ -1,5 +1,5 @@
 package com.getbeanobject.beanobjectfirst.controller;
-import com.getbeanobject.beanobjectfirst.controller.ValueAnnotationExample;
+
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
 

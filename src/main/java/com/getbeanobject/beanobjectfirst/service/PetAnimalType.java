@@ -1,7 +1,6 @@
 package com.getbeanobject.beanobjectfirst.service;
 //import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
-import com.getbeanobject.beanobjectfirst.service.AnimalInterface;
 
 //@Primary
 @Component

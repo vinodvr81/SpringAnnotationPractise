@@ -5,9 +5,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class HelloVinod {
 
-	public String HelloVinod() {
+	private String WelcomeMsg;
+	public HelloVinod() {
 		// TODO Auto-generated constructor stub
-		return "Hello Vinod Rangaswamy Vukkalam! Welcome to Maven project";
+		this.WelcomeMsg = "Hello Vinod Rangaswamy Vukkalam! Welcome to Maven project";
+	}
+	public String getHelloVinod() {
+		return this.WelcomeMsg;
 	}
 
 }

@@ -12,7 +12,7 @@ import com.getbeanobject.beanobjectfirst.controller.AnnotationThroughSetterExamp
 import com.getbeanobject.beanobjectfirst.controller.AutowiredThroughField;
 import com.getbeanobject.beanobjectfirst.controller.QualifierController;
 import com.getbeanobject.beanobjectfirst.controller.PrimaryController;
-import com.getbeanobject.beanobjectfirst.config.AppConfig;
+
 import com.getbeanobject.beanobjectfirst.service.CarMahindra;
 import com.getbeanobject.beanobjectfirst.service.BikeBajaj;
 import com.getbeanobject.beanobjectfirst.service.AutoTVSThreeWheeler;
@@ -23,7 +23,7 @@ public class BeanobjectfirstApplication {
 	public static void main(String[] args) {
 		var context = SpringApplication.run(BeanobjectfirstApplication.class, args);
 		HelloVinod obj = context.getBean(HelloVinod.class);
-		System.out.println(obj.HelloVinod());
+		System.out.println(obj.getHelloVinod());
 
 		beanDifferentObj diffBeanskanda = (beanDifferentObj) context.getBean("Skanda");
 		System.out.println(diffBeanskanda.beanDifferentObjnameCall());
@@ -32,7 +32,7 @@ public class BeanobjectfirstApplication {
 		System.out.println(autowireEx.getAutowiredThroughConstructor());
 
 		ValueAnnotationExample ats = context.getBean(ValueAnnotationExample.class);
-		ats.setAutowiredThroughSetter("This is coming Soon and I promise");
+		ats.setAutowiredThroughSetter("This is coming Soon and A promise to Myself");
 		System.out.println(ats.getAutowiredThroughSetter());
 
 		ValueMessagePassed vms = context.getBean(ValueMessagePassed.class);

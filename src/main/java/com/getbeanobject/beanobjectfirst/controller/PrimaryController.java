@@ -1,6 +1,5 @@
 package com.getbeanobject.beanobjectfirst.controller;
 import org.springframework.stereotype.Component;
-import org.springframework.beans.factory.annotation.Autowired;
 import com.getbeanobject.beanobjectfirst.service.AnimalInterface;
 
 @Component
